@@ -6,23 +6,21 @@ public class HelloWorld {
 	
 	public static void main(String[] args) {
 //		
-		printMessage();
-		
+//		printMessage("This is Bola");
+//		
 	}
 
 
-public static void printMessage() {
+public static void printMessage(String myMessage) {
 //	 DataType variablName equals value
 	
-	String myMessage = " Hello World";
+//	String myMessage = " Hello World";
 	
 	System.out.println(myMessage);
 		
 	}
 
 }
-
-
 
 
 
