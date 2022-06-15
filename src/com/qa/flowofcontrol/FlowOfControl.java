@@ -12,7 +12,7 @@ public class FlowOfControl {
 		System.out.println("Line 2");
 	}
 	
-	
+	//The order is line 16,17,5,6,7,18,9,10,11,19,20
 	//code execution starts from the main
 	public static void main(String[] args) {
 		
@@ -24,3 +24,4 @@ public class FlowOfControl {
 	}
 
 }
+
