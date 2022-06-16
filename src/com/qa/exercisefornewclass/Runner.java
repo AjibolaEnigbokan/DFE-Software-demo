@@ -7,10 +7,10 @@ public class Runner {
 		
 		ExerciseForClass  myclass = new ExerciseForClass();
 		
-		myclass.addition(5, 8);
-		
-		myclass.multiplication (10 , 4);
-		myclass.substraction(11 , 8);
+//		myclass.addition(5, 8);
+//		
+//		myclass.multiplication (10 , 4);
+//		myclass.substraction(11 , 8);
 		myclass.division(18, 5);
 	
 	 

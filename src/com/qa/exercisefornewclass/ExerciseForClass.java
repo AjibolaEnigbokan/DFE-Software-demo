@@ -17,8 +17,14 @@ public class ExerciseForClass {
 	}
 	
 	public void division (double myNumberOne , double myNumberTwo ) {
-		System.out.println(myNumberOne / myNumberTwo);
 		
+		if(myNumberOne < myNumberTwo) {
+			System.out.println("the sum  is : ");
+			System.out.println(myNumberOne / myNumberTwo);
+			
+		}else {
+		System.out.println("The division cannot be performed");
+		}
 	}
 	
 
