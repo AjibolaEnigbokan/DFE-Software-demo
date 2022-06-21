@@ -39,17 +39,17 @@ public class Results {
 			System.out.println("You passed, good job !");
 			
 		} else {
-			System.out.println("You failed !, you must score 60% and above in all subjects for you to pass.");
+			System.out.println("You failed !, your percentage score must be 60% and above in all subjects for you to pass.");
 			
 			if(biologyP <60 ) {
-				System.out.println("You failed biology " + " because  your score is : " + this.biology);
+				System.out.println("You failed biology " + " because  your percentage score is : " + biologyP);
 			}
 			if(chemistryP <60 ) {
-				System.out.println("You failed chemistry " + " because  your score is : " + this.chemistry);
+				System.out.println("You failed chemistry " + " because  your percentage score is : " + chemistryP);
 			}
 			
 			if(physicsP <60 ) {
-				System.out.println("You failed physics " + " because  your score is : " + this.physics);
+				System.out.println("You failed physics " + " because  your percentage score is : " + physicsP);
 			}
 		}
 
