@@ -7,8 +7,16 @@ public class RunnerDemo {
 		// TODO Auto-generated method stub
 		
 		Exercise ex  = new Exercise ();
-		//ex.methodOne();
-		ex.questionTwo();
+		// ex.methodOne("This is the sentence");
+		//ex.questionTwo();
+		
+//		ex.myConcate();
+		//ex.methodCount("This is my World");
+		
+//		ex.methodThree();
+		
+		ex.methodThree(" The moment is now");
+	
 	}
 
 }
