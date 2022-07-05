@@ -25,7 +25,7 @@ public class ListStream {
 		// myStreamNames.filter(name->!name.equals("James").forEach(name ->
 		// System.out.println( "Hello " + name));
 
-//		myStreamNames.forEach(name -> {
+		myStreamNames.forEach(name -> {
 //			if (!name.equals("James")) {
 //				System.out.println("Hello " + name);// if name does not equal to James i.e print without James
 //
@@ -67,17 +67,24 @@ public class ListStream {
 		// System.out.println("The maximun value is : " + var);
 
 		 Integer var = convertedStream.min(Integer::compare).get();
+		 // convertedStream.reduce((num1, num2)-> )
 
 		 System.out.println("The minumum value is : " + var);
 
-		 convertedStream.filter(number-> number % 2!= 0 ).forEach(number ->
+		 convertedStream.filter(number-> number % 2== 0 ).forEach(number -> // keeping even numbers
 		 System.out.println(number));
 
-		 convertedStream.filter(number-> number % 2 == 0 ).forEach(number ->
+		 convertedStream.filter(number-> number % 2 != 0 ).forEach(number -> // keeping odd numbers
 		 System.out.println(number));
 
-		int sum = convertedStream.mapToInt(Integer::intValue).sum();
+		int sum = convertedStream.mapToInt(Integer::intValue).sum(); // can be done in other way too like below
 		System.out.println(sum);
+		
+		// int sum = convertedStream.reduce((num1, num2)->num1 + num2).get();
+		//System.out.println(sum);
+		
+		int  square =convertedStream.map(num ->Math.pow(num, 2)).filter(number-> number % 2 != 0 ).min(Integer::compare).get();
+		System.out.println(square);
 
 	}
 
